@@ -19,6 +19,7 @@ builder.Services.AddCors(options =>
 });
 // Register the Repositories
 builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 
 var app = builder.Build();
 
